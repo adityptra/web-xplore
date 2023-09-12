@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.container {
+    max-height: 100vh;
+    display: flex;
+}
+
+.navbar {
+    /* backdrop-filter: blur(2px); */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.32741018770789565) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    gap: 15em;
+    justify-content: space-evenly;
+    z-index: 99999;
+}
+
+
+.navbar h2 {
+    position: relative;
+    align-items: flex-start;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar span {
+    font-weight: 350;
+}
+
+.navbar li i {
+    color: white;
+    position: relative;
+    top: 5px;
+    left: 55px;
+    cursor: pointer;
+}
+
+
+.navbar h2 a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar h2::selection {
+    background-color: transparent;
+    color: white;
+}
+
+.container-nav {
+    display: flex;
+}
+
+.container-nav li {
+    display: inline-flex;
+    list-style: none;
+    margin-right: 35px;
+    position: relative;
+}
+
+.container-nav a {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+.container-nav a::selection {
+    background-color: transparent;
+    color: white;
+}
+
+#li::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 0%;
+    background-color: #efefef;
+    border-radius: 50px;
+    transition: width 0.5s ease;
+    transition-delay: .3s;
+    transform-origin: center;
+}
+
+
+#li:hover::before {
+    width: 100%;
+    text-decoration-color: #efefef;
+    transform-origin: center;
+}
+
+.navbar .fa-magnifying-glass {
+    cursor: pointer;
+    width: 10px;
+    transition: .5s .2s;
+    padding: 5px;
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    overflow: hidden;
+}
+
+.navbar .fa-magnifying-glass:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 130px;
+}
+
+.navbar li i input {
+    cursor: text;
+    outline: none;
+    border: none;
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+    top: 2.5px;
+    left: 26px;
+    width: 85px;
+    height: 20px;
+    transition: .6s .3s;
+}
+
+.navbar li i input:hover {
+    opacity: 1;
+}
+
+.navbar li i input:-ms-input-placeholder {
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+
+
+
+
+/* content here */
+.container-content {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content h1::selection {
+    background-color: yellow;
+    color: black;
+}
+
+
+
+.container-content h1 {
+    resize: both;
+    cursor: e-resize;
+    color: #efefef;
+    text-shadow: 1.5px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 55px;
+    transition: .4s;
+}
+
+.container-content {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(gunung.png);
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    z-index: 222;
+}
+
+.content h1 {
+    position: relative;
+    left: 3%;
+    top: -750px;
+    font-size: 320px;
+    color: white;
+    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.content h1::selection {
+    color: white;
+    background-color: transparent;
+    text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.content #h1::selection {
+    color: white;
+    background-color: transparent;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: none;
+}
+
+.content #h1 {
+    position: relative;
+    left: 43px;
+    top: -1440px;
+    font-size: 320px;
+    z-index: -1;
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -2055px;
+    opacity: 95%;
+    z-index: 999999;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6663457619375875) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.container-text {
+    width: 35%;
+    text-align: center;
+    position: relative;
+    top: -1715px;
+    z-index: 99999999;
+    color: white;
+    opacity: 1;
+    left: 35%;
+}
+
+.container-text p {
+    font-weight: 350;
+    position: relative;
+    top: -5px;
+}
+
+.container-text span {
+    font-weight: 500;
+}
+
+.container-text a {
+    text-decoration: none;
+    background-color: transparent;
+    border: 1.5px solid white;
+    backdrop-filter: blur(2px);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding-inline: 15px;
+    padding-block: 8px;
+    border-radius: 15px;
+    outline: none;
+    transition: .4s .1s;
+}
+
+.container-text a:hover {
+    backdrop-filter: none;
+    border: 1.5px solid transparent;
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.icon-pack {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 999999;
+    top: 530px;
+}
+
+.icon-pack i {
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+    left: 200%;
+    color: white;
+    cursor: pointer;
+    transition: .5s .2s;
+}
+
+.icon-pack i:hover {
+    color: #ebebeb;
+}
+
+
+
+
+.title-icon {
+    color: white;
+    position: relative;
+    font-size: 12px;
+    left: -15%;
+}
